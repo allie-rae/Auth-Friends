@@ -11,3 +11,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin: 1% auto;
+}
+
+h2 {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  margin: 0px;
+}
+
+.friendCard {
+  box-shadow: 1px 3px 8px 2px lightgray;
+  max-width: 700px;
+  width: 70%;
+  padding: 4%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  font-weight: 400;
+  background-image: url("./201.png");
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 2px 6px 1px lightgray;
+  padding: 5px;
+  background-image: url("./201.png");
+}
+
+button {
+  color: black;
+}
+
+button:hover {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  transition: 0.6s;
+}
+
+.friendInput {
+  background: white;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 3px;
+  font-family: 'Noto Sans';
+}
+
+.navLink {
+  font-family: 'Noto Sans';
+  text-decoration: none;
+  color: rgb(156, 156, 156);
+  margin: 1%;
+  text-transform: uppercase;
+}
+
+.navLink:hover {
+  color: rgb(221, 221, 221);
+}
+
+nav {
+  text-align: center;
+  background-color: rgb(32, 32, 32);
+  padding: 1%;
+}

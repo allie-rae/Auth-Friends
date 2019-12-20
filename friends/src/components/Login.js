@@ -28,7 +28,7 @@ const Login = (props) => {
             .post('/login', formData.credentials)
             .then(res => {
                 localStorage.setItem('token', res.data.payload)
-                props.history.push('/friends')
+                props.history.push('/friendslist')
             })
             .catch(err => console.log(err))
     }
@@ -41,6 +41,7 @@ const Login = (props) => {
                 value={formData.credentials.username}
                 placeholder="Username"
                 onChange={onChange}
+                className="friendInput"
             />
             <input
                 type="password"
@@ -48,8 +49,9 @@ const Login = (props) => {
                 value={formData.credentials.password}
                 placeholder="Password"
                 onChange={onChange}
+                className="friendInput"
             />
-            <button>
+            <button className="friendInput">
                 Log in
             </button>
         </form>
